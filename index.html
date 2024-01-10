@@ -46,7 +46,7 @@
             Pedidos de <span class="logoshein">SHEIN</span> a precio <br />de
             pagina via currier.
           </p>
-          <a href="#seccion4">Quiero Comprar!</a>
+          <a href="#seccion3">Quiero Comprar!</a>
         </div>
       </div>
     </seccion>
@@ -198,7 +198,21 @@
     </footer>
 
   </body>
-  <script src="/script.js"></script>
+
+  <script>
+    const nav = document.querySelector("#nav");
+      const abrir = document.querySelector("#abrir");
+      const cerrar = document.querySelector("#cerrar");
+
+      abrir.addEventListener("click", () => {
+        nav.classList.add("visible");
+      })
+
+      cerrar.addEventListener("click", () => {
+        nav.classList.remove("visible");
+      })
+  </script>
+  
 </html>
 
 
