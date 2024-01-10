@@ -1,0 +1,481 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+@font-face {
+    font-family: fontEslogan;
+    src: url(/fonts/Blackness.ttf);
+}
+
+@font-face {
+    font-family: fontSecciones ;
+    src: url(/fonts/Pink\ Bloom.ttf);
+}
+
+@font-face {
+    font-family: fontNosotros;
+    src: url(/fonts/Honeypirls\ Regular.otf);
+}
+
+@font-face {
+    font-family: fontLujos;
+    src: url(/fonts/Southland\ TTF.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CODIGO CSS BARRA DE NAVEGACION */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+.logolujoss{
+    max-width: 15rem;
+}
+
+.nav-list{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav-list li a{
+    color: black;
+    font-family: Poppins;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.cerrar-menu,
+.abrir-menu{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .abrir-menu:hover,
+    .cerrar-menu:hover{
+        background-color: rgba(0, 0, 0, .2);
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1.5rem;
+        background-color: #D7AD8E;
+        box-shadow: 0 0 0 100vmax rgba(241, 232, 219, 0.5);
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+
+/* CSS SECCION 1 DE LANDING PAGE, BACKGROUND Y ESLOGAN */
+
+.prueba-landing{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/eslogan-bg.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+}
+
+
+.info-info{
+    width: 80%;
+    margin: 5% auto;
+}
+
+
+.info-info .eslogan{
+    display: block;
+    line-height: 1.5;
+    font-size: 3rem;
+    font-family: fontEslogan;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.info-info .logoshein{
+    font-family: monospace;
+    font-weight: 1000;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.info-info p {
+    margin-top: 2rem;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-info a {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #df945f;
+    color: white;
+    text-transform: uppercase;
+    font-family: Poppins;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.info-info a:hover {
+    background: radial-gradient(circle, #df945f, #925d38);
+    transform: translateY(-5px);
+} 
+
+
+/* CSS SECCION 2 ACERCA DE NOSOTROS Y RESEñA */
+
+.seccion2{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.contenedor-acercade{
+    width: 98%;
+    margin: 3rem auto;
+}
+
+.contenedor-acercade h2{
+    font-family: fontSecciones;
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: overline;
+}
+
+/* DIV ACERCA DE */
+
+.seccion-acercade{
+    display: flex;
+}
+
+.acercade-info {
+    width: 50%;
+    height: auto;
+}
+
+.acercade-info h2{
+    text-align: center;
+    padding-top: 60px ;
+    font-family: fontNosotros;
+    letter-spacing: 2px;
+    font-size: 4em;
+}
+
+.acercade-info p{
+    font-family: Poppins;
+    padding: 50px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.acercade-info .logoshein{
+    font-family: monospace;
+    font-weight: 1000;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.acercade-img{
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #df945f99;
+    border-radius: 100% 0% 30% 00%;
+}
+
+.acercade-img img{
+    width: 450px;
+}
+
+
+/* DIV RESEñAS */
+
+.reseñas {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.reseñas-subtitulo{
+    font-family: Poppins;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.reseñas .logolujos{
+    background-color: rgba(212, 207, 207, 0.5);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: black;
+}
+
+.reseñas .lujos{
+    font-family: fontLujos;
+    font-size: 2em;
+    font-weight: 1000;
+}
+
+.reseñas .collections{
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.reseñasclientes{
+    display: flex;
+    margin-top: 25px;
+}
+
+.reseña {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+}
+
+.reseña img {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.nombre-cliente {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.comentario {
+    color: black;
+    padding-top: 20px;
+    
+}
+
+.calificacion{
+    font-size: 15px;
+}
+
+.calificacion i{
+    color: gold;
+}
+
+.comentario span{
+    text-decoration: underline;
+    padding: 1px 5px;
+
+}
+
+@media (max-width:800px) {
+
+    .seccion2{
+        border: 1px solid;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: block;
+    }
+
+    /*ACERCA DE*/
+
+    .acercade-info{
+        width: 100%;
+    }
+
+    .acercade-img{
+        display: none;
+    }
+
+    /* RESEñA */
+
+    .reseñasclientes{
+        display: block;
+        margin-top: 75px;
+    }
+
+    .reseña{
+        width: 85%;
+        margin: 10px;
+        align-items: center;
+    }
+
+}
+
+
+/* SECCION 3 - COMO COMPRAR */
+
+.seccion3{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.seccion3 h2{
+    text-align: center;
+    padding-top: 60px ;
+    font-family: fontNosotros;
+    letter-spacing: 2px;
+    font-size: 4em;
+}
+
+.video-como-comprar{
+    padding: 25px;
+    width: 80%;
+    height: auto;
+    margin: 1px auto;
+}
+
+.video-como-comprar video{
+    width: 100%;
+}
+
+@media (max-width:800px){
+
+    .seccion3 h2{
+        text-align: center;
+        padding-top: 60px ;
+        font-family: fontNosotros;
+        letter-spacing: 2px;
+        font-size: 3em;
+    }
+
+    .video-como-comprar{
+        padding: 1px;
+        width: 95%;
+        height: auto;
+        margin: 1px auto;
+    }
+}
+
+
+/*FOOTER*/
+
+.footer{
+    background-color: #F1E8DB;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logo,
+.footer-enlaces,
+.footer-contactos{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-enlaces p{
+    font-family: Poppins;
+    font-size: 1.5rem;
+}
+
+.footer-enlaces li, a{
+    list-style-type: none;
+    color: rgb(67, 66, 66);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-contactos p{
+    font-family: Poppins;
+    font-size: 1.5rem;
+}
+
+.footer-contactos img{
+    width: 5rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+
+.footer-contactos img:hover{
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.copyright{
+    text-align: center;font-size: 1.2rem;
+    background-color: #F1E8DB;
+    padding-bottom: 2rem;
+    
+}
+
+@media (max-width: 550px){
+    .footer{
+        display: block;
+    }
+
+    .footer-logo,
+    .footer-enlaces,
+    .footer-contactos{
+    
+    width: 90%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+}
+
+
