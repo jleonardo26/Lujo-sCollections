@@ -1,28 +1,10 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap&');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
-@font-face {
-    font-family: fontEslogan;
-    src: url(/fonts/Blackness.ttf);
-}
-
-@font-face {
-    font-family: fontSecciones ;
-    src: url(/fonts/Pink\ Bloom.ttf);
-}
-
-@font-face {
-    font-family: fontNosotros;
-    src: url(/fonts/Honeypirls\ Regular.otf);
-}
-
-@font-face {
-    font-family: fontLujos;
-    src: url(/fonts/Southland\ TTF.ttf);
-}
 
 *{
     padding: 0;
@@ -131,14 +113,32 @@ header{
     margin: 5% auto;
 }
 
-
 .info-info .eslogan{
     display: block;
     line-height: 1.5;
-    font-size: 3rem;
-    font-family: fontEslogan;
+    font-size: 4rem;
+    font-family: 'Short Stack', cursive;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 700px){
+    .info-info .eslogan{
+        display: block;
+        line-height: 1.5;
+        font-size: 3rem;
+        font-family: 'Short Stack', cursive;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .info-info p {
+        margin-top: 2rem;
+        font-family: Poppins;
+        font-size: 1.2rem;
+        color: #333;
+        background-color: #dddddda0;
+        margin-bottom: 20px;
+    }
 }
 
 .info-info .logoshein{
@@ -185,18 +185,6 @@ header{
     background-color: white;
 }
 
-.contenedor-acercade{
-    width: 98%;
-    margin: 3rem auto;
-}
-
-.contenedor-acercade h2{
-    font-family: fontSecciones;
-    text-align: center;
-    font-size: 5rem;
-    text-decoration: overline;
-}
-
 /* DIV ACERCA DE */
 
 .seccion-acercade{
@@ -211,7 +199,7 @@ header{
 .acercade-info h2{
     text-align: center;
     padding-top: 60px ;
-    font-family: fontNosotros;
+    font-family: 'Salsa', cursive;
     letter-spacing: 2px;
     font-size: 4em;
 }
@@ -261,22 +249,8 @@ header{
     line-height: 1;
 }
 
-.reseñas .logolujos{
-    background-color: rgba(212, 207, 207, 0.5);
-    padding: 8px 15px;
-    border-radius: 10px;
-    color: black;
-}
-
-.reseñas .lujos{
-    font-family: fontLujos;
-    font-size: 2em;
-    font-weight: 1000;
-}
-
-.reseñas .collections{
-    font-family: monospace;
-    text-transform: uppercase;
+.reseñas-subtitulo .logolujos img{
+    width: 170px;
 }
 
 .reseñasclientes{
@@ -373,7 +347,7 @@ header{
 .seccion3 h2{
     text-align: center;
     padding-top: 60px ;
-    font-family: fontNosotros;
+    font-family: 'Salsa', cursive;
     letter-spacing: 2px;
     font-size: 4em;
 }
